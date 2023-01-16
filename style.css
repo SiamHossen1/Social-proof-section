@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root{
+    --clr-Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --clr-Soft-Pink: hsl(333, 80%, 67%);
+    --clr-Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --clr-Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --clr-White: hsl(0, 0%, 100%);
+
+    --ff-primary: 'League Spartan', sans-serif;
+
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+}
+
+*,
+*::before,
+*::after { 
+  box-sizing: border-box;
+}
+
+body{
+    font-family: var(--ff-primary);
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+section{
+    margin: 3rem 6%;  
+}
+
+.achievement__container{
+    text-align: center;
+}
+
+.total__product{
+    font-size: 2.5rem;
+    word-spacing: -3px;
+    color: var(--clr-Very-Dark-Magenta);
+    margin-bottom: 0;
+}
+
+.our-commitment{
+    font-size: 1.2rem;
+    font-weight: var(--fw-medium);
+    color: var(--clr-Dark-Grayish-Magenta);
+    margin-bottom: 2rem;
+}
+
+.rating__card{
+    background-color: var(--clr-Light-Grayish-Magenta);
+    margin-bottom: 1rem;
+    padding: 1rem 0 0.3rem 0;
+    line-height: .8;
+    border-radius: .5rem;
+}
+
+.rating__catagory{
+    font-weight: var(--fw-bold);
+    color: var(--clr-Very-Dark-Magenta);
+}
+
+.review__container{
+    color: var(--clr-White);
+}
+
+.review__card{
+    background-color: var(--clr-Very-Dark-Magenta);
+    border-radius: .5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.user__info{
+    display: flex;
+    align-items: center;
+}
+
+.user__name p{
+    margin: 0;
+}
+
+.user__name p:nth-child(2){
+    color: var(--clr-Soft-Pink);
+}
+
+.user__info img{
+    border-radius: 50%;
+    margin-right: 1rem;
+    width: 3rem;
+}
+
+.user__commnet{
+    margin-bottom: 0;
+}
+
+@media (min-width: 976px){
+    section{
+        margin: 5rem 7rem; 
+    }
+    .achievement__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 0;
+        margin-top: 2rem;
+    }
+    .product__container{
+        text-align: left;
+    }
+    .total__product{
+        width: 60%;
+        font-size: 3rem;
+        line-height: 1;
+    }
+    .our-commitment{
+        width: 90%;
+    }
+    .rating__container{
+        align-self: center;
+    }
+    .rating__card{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0.5rem 0 0.5rem 2rem;
+        width: 85%;
+    }
+    .rating__card:nth-child(2){
+        margin-left: 2.5rem;
+    }
+    .rating__card:nth-child(3){
+        margin-left: 5rem;
+    }
+    .star__container{
+        margin-right: 2rem;
+    }
+    .rating__catagory{
+        line-height: 1.2;
+    }
+    .review__container{
+        /* display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 1.5rem;
+        margin-top: 0; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        height: 40vh;
+    }
+    .review__card:nth-child(1){
+        align-self: flex-start;
+    }
+    .review__card:nth-child(2){
+        align-self: center;
+    }
+    .review__card:nth-child(3){
+        align-self: flex-end;
+    }
+}
+
+
